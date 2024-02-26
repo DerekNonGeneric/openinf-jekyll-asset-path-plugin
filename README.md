@@ -1,5 +1,9 @@
+[![Orange banner indicating a preview software component][release-level-banner--unstable]](##)
+
+<br />
+
 <!-- markdownlint-disable-next-line line-length -->
-<a href="##"><img src="https://raw.githubusercontent.com/OpenINF/openinf.github.io/live/assets/img/svg/logogram-color.svg?sanitize=true" alt="OpenINF logo" title="OpenINF" align="right" height="96" width="96" /></a>
+<a href="##"><img src="https://open.inf.is/assets/img/svg/logogram-color.svg" alt="OpenINF logo" title="OpenINF" align="right" height="96" width="96" /></a>
 
 <div align="left">
 
@@ -9,9 +13,11 @@
 > enabling the organizing of their associated materials into respective
 > subdirectories (as opposed to potential, absolute chaos).
 
+<br />
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/OpenINF/openinf-jekyll-asset-path-plugin/)
 
-=====================
+</div>
 
 <img src="https://raw.githubusercontent.com/samrayner/jekyll-asset-path-plugin/master/icon.png" width="150" alt="Jekyll Asset Path Plugin" />
 
@@ -115,3 +121,25 @@ bundle exec jekyll serve
 then check the test results by browsing to [http://localhost:4000][test_site].
 
 [test_site]: http://localhost:4000
+
+<br /><br />
+
+---
+
+<br /><br />
+
+<a title="The OpenINF website" href="https://open.inf.is" rel="author">
+  <img alt="The OpenINF logo" height="32px" width="32px" src="https://open.inf.is/assets/img/svg/logogram-color.svg" />
+</a>
+
+</div>
+
+<br /><br />
+
+[![Orange banner indicating a preview software component][release-level-banner--unstable]](##)
+  
+<!-- LINK LABEL DEFINITIONS - START -->
+
+[release-level-banner--unstable]: https://open.inf.is/assets/img/svg/release-level-banner--unstable.svg 'Banner for Release Level: Unstable'
+
+<!-- LINK LABEL DEFINITIONS - END -->
