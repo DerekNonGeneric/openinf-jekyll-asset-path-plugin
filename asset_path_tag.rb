@@ -1,4 +1,4 @@
-<<~aid-*- coding: utf-8 -*- ruby -*- asset_path_tag.rb *************************
+<<~aid -*- coding: utf-8 -*- ruby -*- asset_path_tag.rb ************************
 
   A Jekyll plugin to output a relative URL for assets based on the post or page
 
@@ -28,7 +28,8 @@ File _data/image.csv contains:
   image_one.png
   image_two.png
 
-{% for image in site.data.images %}{% asset_path {{ image.file }} %}{% endfor %} on post 2015-03-21-post-title
+{% for image in site.data.images %}{% asset_path {{ image.file }} %}{% endfor %}
+on post 2015-03-21-post-title
 
 Output:
 /assets/posts/post-title/image_one.png
@@ -40,12 +41,12 @@ Site contains posts:
   post-title
   another-post-title
 
-{% for post in site.posts %}{% asset_path cover.jpg {{post.id}} %}{% endfor %} on index.html
+{% for post in site.posts %}{% asset_path cover.jpg {{post.id}} %}{% endfor %} ]
+on index.html
 
 Output:
 /assets/posts/post-title/cover.jpg
 /assets/posts/another-post-title/cover.jpg
-
 
 *****************************************************************************aid
 
@@ -53,7 +54,6 @@ Output:
 #
 # @license MIT OR Apache-2.0 OR BlueOak-1.0.0
 # @copyright The OpenINF Authors and Friends
-# @link https://open.inf.is/LICENSE
 # @author Sam Rayner
 # @author Otto Urpelainen
 # @author The OpenINF Authors and Friends
