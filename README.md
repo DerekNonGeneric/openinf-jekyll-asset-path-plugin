@@ -1,9 +1,20 @@
-Jekyll Asset Path Tag
+<!-- markdownlint-disable-next-line line-length -->
+<a href="##"><img src="https://raw.githubusercontent.com/OpenINF/openinf.github.io/live/assets/img/svg/logogram-color.svg?sanitize=true" alt="OpenINF logo" title="OpenINF" align="right" height="96" width="96" /></a>
+
+<div align="left">
+
+## Jekyll Asset Path Tag (OpenINF Adaptation)
+
+> A liquid tag to output a relative URL for assets related to a post or page;
+> enabling the organizing of their associated materials into respective
+> subdirectories (as opposed to potential, absolute chaos).
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/OpenINF/openinf-jekyll-asset-path-plugin/)
+
 =====================
 
 <img src="https://raw.githubusercontent.com/samrayner/jekyll-asset-path-plugin/master/icon.png" width="150" alt="Jekyll Asset Path Plugin" />
 
-A liquid tag to output a relative URL for assets based on the post or page, allowing you to organise your assets into subdirectories.
 
 Syntax:
 ```
