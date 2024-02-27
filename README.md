@@ -7,9 +7,9 @@
 
 <div align="left">
 
-## Jekyll Asset Path Tag (OpenINF Adaptation)
+## `@openinf/jekyll-asset-path-tag`
 
-> A liquid tag to output a relative URL for assets related to a post or page;
+> A Liquid tag to output a relative URL for assets related to a post or page;
 > enabling the organizing of their associated materials into respective
 > subdirectories (as opposed to potential, absolute chaos).
 
@@ -127,6 +127,8 @@ then check the test results by browsing to [http://localhost:4000][test_site].
 ---
 
 <br /><br />
+
+<div align="center">
 
 <a title="The OpenINF website" href="https://open.inf.is" rel="author">
   <img alt="The OpenINF logo" height="32px" width="32px" src="https://open.inf.is/assets/img/svg/logogram-color.svg" />
