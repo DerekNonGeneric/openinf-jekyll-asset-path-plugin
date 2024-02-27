@@ -23,19 +23,21 @@
 
 
 Syntax:
-```
+
+```liquid
 {% asset_path filename %}
 {% asset_path filename post_id %}
 {% asset_path "filename with whitespace" post_id %}
 {% asset_path filename /collection_label/post_id %}
 ```
 
-## Installation
+### Installation
+
 Copy asset_path_tag.rb into */_plugins* ([Jekyll][j]) or */plugins* ([Octopress][o])
 
-## Examples
+### Examples
 
-### Asset of this post
+#### Asset of this post
 
 ```
 {% asset_path my-image.png %}
@@ -49,63 +51,78 @@ in page my-first-page would output:
 /assets/my-first-page/my-image.png
 ```
 
-### Asset of another post
+#### Asset of another post
 
 ```
 {% asset_path document.pdf /2012/05/25/another-post-title %}
 ```
+
 would output:
+
 ```
 /assets/posts/another-post-title/document.pdf
 ```
 
-### Asset of document in a collection
+#### Asset of document in a collection
 
-```
+```liquid
 {% asset_path image.jpg /my_collection/document_in_collection %}
 ```
+
 would output:
-```
+
+```markdown
 /assets/my_collection/document_in_collection/image.jpg
 ```
 
-## Uses
+### Usage
 
 Useful for images and links in Markdown or HTML:
-```
+
+```markdown
 [Download script]({% asset_path my-script.js %})
 <img src="{% asset_path my-image.png %}" alt="My Image" />
 ```
 
-Given file _data/image.csv contains:
+Given file `_data/image.csv` contains:
+
 ```csv
 file
 image_one.png
 image_two.png
 ```
-and post 2015-03-21-another-post-title contains:
+
+and post `2015-03-21-another-post-title` contains:
+
 ```liquid
 {% for image in site.data.images %}
   {% asset_path {{ image.file }} %}
 {% endfor %}
 ```
+
 then the tag will output:
+
 ```text
 /assets/posts/another-post-title/image_one.png
 /assets/posts/another-post-title/image_two.png
 ```
 
 When used with `post_id` parameter, the tag is useful for showing asset from each page. Given the site contains pages:
-```
+
+```text
 post-title
 another-post-title
 ```
+
 then
-```
+
+```liquid
 {% for post in site.posts %}{% asset_path cover.jpg {{post.id}} %}{% endfor %}
 ```
-on index.html will output:
-```
+
+on `index.html` will output:
+
+```markdown
 /assets/posts/post-title/cover.jpg
 /assets/posts/another-post-title/cover.jpg
 ```
@@ -113,11 +130,14 @@ on index.html will output:
 [j]: http://jekyllrb.com/
 [o]: http://octopress.org/
 
-## Testing
+### Testing
+
 The plugin can be tested by using the Jekyll test site in `test_site` directory. Generate the site with
-```
+
+```shell
 bundle exec jekyll serve
 ```
+
 then check the test results by browsing to [http://localhost:4000][test_site].
 
 [test_site]: http://localhost:4000
